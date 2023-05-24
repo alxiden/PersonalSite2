@@ -17,6 +17,8 @@ function finger(){
     document.getElementById(id).style.zIndex = 0
     const input = 'finger -l d.ward'
     anima(input, '.cmd')
+    document.getElementById('finger-info').style.position = 'inherit'
+    document.getElementById('finger-info').style.zIndex = 3
 }
 
 function man(){

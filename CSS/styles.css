@@ -103,6 +103,16 @@ body{
     width: 350px;
 }
 
+.output-txt{
+    place-items: start;
+    padding: 0%;
+}
+
+.output{
+    padding: 0;
+}
+
+
 
 
 /* ID */
@@ -174,8 +184,9 @@ body{
 
 #finger-info{
     color: white;
-    position: inherit;
-    z-index: 3;
+    position: absolute;
+    z-index: -2;
+    align-items: start;
 }
 
 
