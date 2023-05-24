@@ -42,6 +42,18 @@ body{
     padding: 0%;
 }
 
+.cmd{
+    width: auto;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+    display: inline;
+    padding: 0;
+    position: absolute;
+    z-index: -2;
+}
+
 .dropdown-menu{
     background-color: #d8d8d8;
 }
@@ -140,15 +152,12 @@ body{
     border: 0px;
 }
 
-
 #welcome-container{
     width: 100%;
     height: 91vh;
     position: absolute;
     z-index: +1 ;
 }
-
-
 
 #col-overide{
     place-items: unset;
@@ -162,6 +171,13 @@ body{
     place-items: center;
     width: 350px;
 }
+
+#finger-info{
+    color: white;
+    position: inherit;
+    z-index: 3;
+}
+
 
 @media (max-width: 1000px) {
     .center-Container{
@@ -190,4 +206,9 @@ body{
     0% {background-color: white;}
     50% {background-color: #383838;}
     100% {background-color: white;}
+}
+
+@keyframes typewriter{
+    from { width: 0;}
+    to {width: 16rem;}
 }

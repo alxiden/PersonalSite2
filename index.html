@@ -15,22 +15,35 @@
         <div id="topbar">
             <h4>user@d.ward: /</h4>
         </div>
-        
-        <div class="card-body" id="terminal">
+        <!-- Terminal layout/design -->
+        <div class="card-body" id="terminal"> 
             <div class="col">
                 <div class="row">
                     <h4 class="terminal-root-text">user@d.ward</h4>
                     <h4 class="punctuation">:</h4>
                     <h4 class="drectory-text">/Homepage</h4>
                     <h4 class="punctuation">$</h4>
+                    <h4 class="cmd" id="cmd-txt"></h4>
                     <div class="cursor"></div>
+                </div>
+                <div class="container" id="finger-info"> <!--About me information-->
+                    <div class="row">
+                        <h4>Name: Daniel Ward</h4>
+                        <h4>Date of Birth: 28/06/96</h4>
+                        <h4>Signature Dish: Ultimate Smash Burger</h4>
+                        
+                        <p>Cooking from 2015, fixing computers from 2021</p>
+                        <h4>Hobbies: Camping, Cooking, Gaming and Gardening</h4>
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 
     <div>
-        <div class="row">
+        <div class="row"> <!-- Options Bar and welcome display -->
             <div class="col-lg" id="col-overide">
                 <div id="options">
                     <div class="row">
@@ -71,48 +84,48 @@
 
             </div>
             <div class="col-lg">
-                <div class="center-Container">
-                    <h1 class="animated-txt">Welcome</h1>
-                    <p class="animated-txt">Please slelect a command from below</p>
+                <div class="center-Container" id="main display">
+                    <h1 class="animated-txt" id="wel">Welcome</h1>
+                    <p class="animated-txt" id="sel">Please slelect a command from below</p>
                 </div>
             </div>
             <div class="col-lg"></div>
         </div>  
-        <div class="row">
+        <div class="row"> <!-- 1st Row of buttons  -->
             <div class="col-lg"></div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light">finger d.ward</button>
+                    <button type="button" class="btn btn-outline-light" id="finger">finger -l d.ward</button>
                 </div>
             </div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light">man d.ward/Skills</button>
+                    <button type="button" class="btn btn-outline-light" id="man">man d.ward/Skills</button>
                 </div>
             </div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light">find *project*</button>
+                    <button type="button" class="btn btn-outline-light" id="find">find *project*</button>
                 </div>
             </div>
             <div class="col-lg"></div>
 
         </div>
-        <div class="row">
+        <div class="row"> <!-- 2nd Row of buttons  -->
             <div class="col-lg"></div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light">ls -lh d.ward/Qualifications</button>
+                    <button type="button" class="btn btn-outline-light" id="ls">ls -lh Qualifications</button>
                 </div>
             </div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light">cd d.ward/WIP</button>
+                    <button type="button" class="btn btn-outline-light" id="cd">cd d.ward/WIP</button>
                 </div>
             </div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light">groups d.ward</button>
+                    <button type="button" class="btn btn-outline-light" id="groups">groups d.ward</button>
                 </div>
             </div>
             <div class="col-lg"></div>
@@ -123,7 +136,7 @@
 
 
 
-    <script src="js/action.js" charset="utf-8"></script>
+    <script src="JS/action.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
