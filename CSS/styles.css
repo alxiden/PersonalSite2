@@ -1,6 +1,7 @@
 body{
     background-color: black;
     font-family: "Courier";
+    overflow: hidden;
 }
 
 /* Class */
@@ -209,18 +210,21 @@ body{
     position: absolute;
     z-index: -2;
     align-items: start;
+    visibility: hidden;
 }
 
 #man-info{
     color: white;
     position: absolute;
-    z-index: -2;
+    z-index: -3;
     align-items: start;
+    visibility: hidden;
 }
 
 #termial-line-2{
     position: relative;
     z-index: -2;
+    visibility: hidden;
 }
 
 #man-bar{
@@ -259,12 +263,15 @@ body{
         position: absolute;
         z-index: -2;
     }
+    p{
+        margin: 2px;
+    }
 }
 
-@media (max-width: 650px){
+@media (max-width: 700px){
     .hidden{
         position: absolute;
-        z-index: -2;
+        z-index: -4;
         visibility: hidden;
     }
 }

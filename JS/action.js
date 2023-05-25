@@ -121,7 +121,9 @@ function fingerPage() {
         setTimeout(function(){
             document.getElementById('finger-info').style.position = 'inherit';
             document.getElementById('finger-info').style.zIndex = 3;
+            document.getElementById('finger-info').style.visibility = 'inherit'
             document.getElementById('termial-line-2').style.zIndex = 0;
+            dodocument.getElementById('termial-line-2').style.visibility = 'inherit';
             document.getElementById('cursor1').style.position = 'absolute';
             document.getElementById('cursor1').style.zIndex = -2;
         },2000);
@@ -137,8 +139,7 @@ function manPage() {
         setTimeout(function(){
             document.getElementById('man-info').style.position = 'inherit';
             document.getElementById('man-info').style.zIndex = 3;
-            document.getElementById('termial-line-2').style.zIndex = 0;
-            document.getElementById('cursor1').style.position = 'absolute';
-            document.getElementById('cursor1').style.zIndex = -2;
+            document.getElementById('man-info').style.visibility = 'inherit';
+
         },2000);
 }
