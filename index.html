@@ -61,7 +61,15 @@
                         
                         
                     </div>
-                    <div class="row" id="termial-line-2">
+                    <div class="row" id="find-info"> <!--Projects-->
+                        <h5 class="output link">Projects/Microsoft Intune.txt</h5>
+                        <h5 class="output">Projects/Microsoft Teams Bot.txt</h5>
+                        <h5 class="output">Projects/New Starter Process Automation.txt</h5>
+                        <h5 class="output">Projects/Sharepoint Knowledgebase Creation.txt</h5>
+                        <h5 class="output">Projects/Internal Helpdesk Ticket System.txt</h5>
+                        <h5 class="output">Projects/Network Switch Replacement.txt</h5>
+                    </div>
+                    <div class="row" id="termial-line-2"> <!--Terminal line 2-->
                         <h4 class="terminal-root-text">user@d.ward</h4>
                         <h4 class="punctuation">:</h4>
                         <h4 class="drectory-text">/Homepage</h4>
@@ -83,13 +91,13 @@
                         <div class="btn-group">
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons1" data-bs-toggle="dropdown"> File</button>
                             <ul class="dropdown-menu" aria-labelledby="option-buttons1">
-                                <li><a class="dropdown-item" href="#">Home</a></li>
-                                <li><a class="dropdown-item" href="#">About Me</a></li>
-                                <li><a class="dropdown-item" href="#">Skills</a></li>
-                                <li><a class="dropdown-item" href="#">Projects</a></li>
-                                <li><a class="dropdown-item" href="#">Qualifications</a></li>
-                                <li><a class="dropdown-item" href="#">Placeholder</a></li>
-                                <li><a class="dropdown-item" href="#">Links and Socials</a></li>
+                                <li><a class="dropdown-item" href="#" id="home">Home</a></li>
+                                <li><a class="dropdown-item" href="#" id="about">About Me</a></li>
+                                <li><a class="dropdown-item" href="#" id="skill">Skills</a></li>
+                                <li><a class="dropdown-item" href="#" id="projects">Projects</a></li>
+                                <li><a class="dropdown-item" href="#" id="qua">Qualifications</a></li>
+                                <li><a class="dropdown-item" href="#" id="place">Placeholder</a></li>
+                                <li><a class="dropdown-item" href="#" id="links">Links and Socials</a></li>
                               </ul>
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons2" data-bs-toggle="dropdown"> Edit</button>
                             <ul class="dropdown-menu" aria-labelledby="option-buttons2">
@@ -125,7 +133,7 @@
             </div>
             <div class="col-lg"></div>
         </div>  
-        <div class="row"> <!-- 1st Row of buttons  -->
+        <div class="row" id="row1"> <!-- 1st Row of buttons  -->
             <div class="col-lg"></div>
             <div class="col-lg">
                 <div class="button-con">
@@ -139,13 +147,13 @@
             </div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light" id="find">find *project*</button>
+                    <button type="button" class="btn btn-outline-light" id="find">find . -name '*.project'</button>
                 </div>
             </div>
             <div class="col-lg"></div>
 
         </div>
-        <div class="row"> <!-- 2nd Row of buttons  -->
+        <div class="row" id="row2"> <!-- 2nd Row of buttons  -->
             <div class="col-lg"></div>
             <div class="col-lg">
                 <div class="button-con">
