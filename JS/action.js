@@ -6,6 +6,9 @@ document.getElementById('ls').addEventListener('click', ls)
 document.getElementById('cd').addEventListener('click', cd)
 document.getElementById('groups').addEventListener('click', groups)
 
+//q button
+document.getElementById('q').addEventListener('click',clearPage)
+
 //option bar buttons
 document.getElementById('home').addEventListener('click', clearPage)
 document.getElementById('about').addEventListener('click', finger)
@@ -180,7 +183,7 @@ function findPage(){
     clear();
         document.getElementById(id).style.position = 'inherit';
         document.getElementById(id).style.zIndex = 0;
-        const input = "find Projects - name '*.txt' -print";
+        const input = "find Projects - name '*.txt'";
         anima(input, '.cmd');
         setTimeout(function(){
             document.getElementById('find-info').style.position = 'inherit';
