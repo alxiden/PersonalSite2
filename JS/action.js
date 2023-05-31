@@ -9,7 +9,7 @@ document.getElementById('groups').addEventListener('click', groups)
 //q button
 document.getElementById('q').addEventListener('click',clearPage)
 
-//option bar buttons
+//option bar file buttons
 document.getElementById('home').addEventListener('click', clearPage)
 document.getElementById('about').addEventListener('click', finger)
 document.getElementById('skill').addEventListener('click', man)
@@ -17,6 +17,17 @@ document.getElementById('projects').addEventListener('click', find)
 document.getElementById('qua').addEventListener('click', ls)
 document.getElementById('place').addEventListener('click', cd)
 document.getElementById('links').addEventListener('click', groups)
+
+//option bar Terminal buttons
+document.getElementById('clear').addEventListener('click', clearPage)
+
+//Modal monitering
+document.getElementById('Intune').addEventListener('click',function(e){ModelText('Intune')})
+document.getElementById('TeamsBot').addEventListener('click',function(e){ModelText('TeamsBot')})
+document.getElementById('NewStarter').addEventListener('click',function(e){ModelText('NewStarter')})
+document.getElementById('Sharepoint').addEventListener('click',function(e){ModelText('Sharepoint')})
+document.getElementById('Helpdesk').addEventListener('click',function(e){ModelText('Helpdesk')})
+document.getElementById('Switch').addEventListener('click',function(e){ModelText('Switch')})
 
 //clear man screen
 document.addEventListener('keydown',function(e){
@@ -26,8 +37,37 @@ document.addEventListener('keydown',function(e){
     
 });
 
+//Model Text Change
+function ModelText(project){
+    var title = 'findModalLabel'
+    var body = 'findBody'
+    let modelTxt = project
+    // console.log(project)
+    if(modelTxt === 'Intune'){
+        document.getElementById(title).innerHTML = 'Intune Rollout';
+        document.getElementById(body).innerHTML = 'Enrolling 130 PC, 30 laptops and 27 Moible phone endpoints into Microsoft Intunes endpoint manager. Alongside setting up update rings, Antivirus, Firewall and Attack surface reduction rules.'
+    }else if (modelTxt === 'TeamsBot') {
+        document.getElementById(title).innerHTML = 'Teams Helpdesk Bot';
+        document.getElementById(body).innerHTML = 'Created a Teams Helpdesk bot using Power Virtual Agents to help support the users quicker and reduce my simple tickets so I can focus on the more complex issues. This included automatic emails and updates using power automate and links to Sharepoint'
+    }else if (modelTxt === 'NewStarter'){
+        document.getElementById(title).innerHTML = 'New Starter Automation';
+        document.getElementById(body).innerHTML = 'Using Power Automate to automate the new starter process for Kings Court Trust and Title Research in one flow. This cut the setup time for new starters from 2 hours to about 15 minutes depending on the specific user and removed a large portion of human error saving yet more time on bug fixes..'
+    }else if (modelTxt === 'Sharepoint'){
+        document.getElementById(title).innerHTML = 'Sharepoint Knowledgebase Creation';
+        document.getElementById(body).innerHTML = 'I migrated the old Confluence knowledgebase that was being hosted on an Azure server into Microsoft SharePoint saving the company £150 a month. As part of this I also added features for user engagement (Countdowns, twitter feeds and the like), a site for IT support creating a more centralised location for IT help and collaboration tools to help internal teams work together more efficiently'
+    }else if (modelTxt === 'Helpdesk') {
+        document.getElementById(title).innerHTML = 'Internal Helpdesk Ticket System';
+        document.getElementById(body).innerHTML = 'I made a internal Helpdesk Ticket System to help the IT team organise jobs and ensure all issues were logged and able to reference back to if needed. This utilised Power Automate and Microsoft Planner as they both cam e with the companies 365 licence. This resulted in a huge improvement in efficiency and user satisfaction with the department.'
+    }
+    else if (modelTxt === 'Switch') {
+        document.getElementById(title).innerHTML = 'Network Switch Replacement';
+        document.getElementById(body).innerHTML = 'Installed and configured 5 POE network switched to replace the older ones. This required the setup of 4 VLANs including Telephony, WIFI and a private VLAN for set users.'
+    }
+}
+
 // current active page
 let currentpage = 'home';
+let modelTxt = ''
 
 // page triggers
 function finger(){
@@ -67,12 +107,11 @@ function find(){
 
 function ls(){
     if (currentpage == 'home'){
-        fingerPage()
-        return currentpage = 'ls';
+        lsPage()
     } else {
         clearPage()
         setTimeout(function(){
-            fingerPage()
+            lsPage()
         },999)
     }; 
 }
@@ -109,7 +148,7 @@ function anima(input, location){
 
 // Clear current page
 function clearPage() {
-    console.log(currentpage)
+    //console.log(currentpage)
     var id = 'cmd-txt';
         const input = 'clear';
         var id = 'cmd-txt-2'
@@ -195,5 +234,25 @@ function findPage(){
             document.getElementById('cursor1').style.position = 'absolute';
             document.getElementById('cursor1').style.zIndex = -2;
             return currentpage = 'find'
-        },2000);
+        },3000);
+}
+
+function lsPage(){
+    var id = 'cmd-txt';
+    clear();
+        document.getElementById(id).style.position = 'inherit';
+        document.getElementById(id).style.zIndex = 0;
+        const input = "ls -lh Qualifications";
+        anima("ls -lh Qualifications", '.cmd');
+        setTimeout(function(){
+            document.getElementById('ls-info').style.position = 'inherit';
+            document.getElementById('ls-info').style.zIndex = 3;
+            document.getElementById('ls-info').style.visibility = 'inherit'
+            document.getElementById('man-info').visibility = 'hidden';
+            document.getElementById('termial-line-2').style.zIndex = 0;
+            document.getElementById('termial-line-2').style.visibility = 'inherit';
+            document.getElementById('cursor1').style.position = 'absolute';
+            document.getElementById('cursor1').style.zIndex = -2;
+            return currentpage = 'ls'
+        },2500);
 }

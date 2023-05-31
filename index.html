@@ -10,7 +10,23 @@
     <!--Local CSS-->
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>  
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="findModal" tabindex="-1" aria-labelledby="findLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="findModalLabel">Placeholder</h5>
+                </div>
+        <div class="modal-body" id="findBody">
+          Placeholder 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="closebtn" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="card border-light" >
         <div id="topbar">
             <h4>user@d.ward: /</h4>
@@ -28,15 +44,15 @@
                 </div>
                     <div class="row" id="finger-info"><!--About me information-->
                         <div class="col-lg output-txt">
-                            <p class="output">Name: Daniel Ward</p>
-                            <p class="output">Date of Birth: 28/06/96</p>
+                            <p class="output"> <b>Name:</b> Daniel Ward</p>
+                            <p class="output"> <b>Date of Birth:</b> 28/06/96</p>
                         </div>
                         <div class="col-lg output-txt">
-                            <p class="output">Signature Dish: Ultimate Smash Burger</p>
-                            <p class="output">Hobbies: Camping, Cooking, Gaming and Gardening</p>
+                            <p class="output"> <b>Signature Dish:</b> Ultimate Smash Burger</p>
+                            <p class="output"> <b>Hobbies:</b> Camping, Cooking, Gaming and Gardening</p>
                         </div>
                         
-                        <p class="output">Summary: Cooking since 2015, fixing computers from 2021</p>
+                        <p class="output"> <b>Summary:</b> Thit is what I do. I cook and I fix things! </p>
                         <p class="output">A fully trained chef turned tech guy, I found a true passion for technology during the pandemic and have never looked back. As the ultimate support player I am always looking for the next way to help those around me while looking to make my way into the world of cyber security.</p>
                     </div>
                     <div class="row" id="man-info"> <!-- Skills -->
@@ -62,12 +78,69 @@
                         
                     </div>
                     <div class="row" id="find-info"> <!--Projects-->
-                        <h5 class="output link">Projects/Microsoft Intune.txt</h5>
-                        <h5 class="output">Projects/Microsoft Teams Bot.txt</h5>
-                        <h5 class="output">Projects/New Starter Process Automation.txt</h5>
-                        <h5 class="output">Projects/Sharepoint Knowledgebase Creation.txt</h5>
-                        <h5 class="output">Projects/Internal Helpdesk Ticket System.txt</h5>
-                        <h5 class="output"> <a href="">Projects/Network Switch Replacement.txt</a> </h5>
+                        <h5 class="output">Select a document below to see more information:</h5>
+                        <h5 class="output"><a class="output" id="Intune" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Microsoft Intune.txt</a></h5>
+                        <h5 class="output"><a class="output" id="TeamsBot" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Microsoft Teams Bot.txt</a></h5>
+                        <h5 class="output"><a class="output" id="NewStarter" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/New Starter Process Automation.txt</a></h5>
+                        <h5 class="output"><a class="output" id="Sharepoint" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Sharepoint Knowledgebase Creation.txt</a></h5>
+                        <h5 class="output"><a class="output" id="Helpdesk" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Internal Helpdesk Ticket System.txt</a></h5>
+                        <h5 class="output"><a class="output" id="Switch" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Network Switch Replacement.txt</a></h5>
+                    </div>
+                    <div class="row" id="ls-info"><!--Qualifications-->
+                        <h5 class="output">Total 20.0M</h5>
+                        <table class="table table-dark table-sm" id="ls-table" >
+                            <thead>
+                                <th>Permissions</th>
+                                <th>Owner</th>
+                                <th>size</th>
+                                <th>Date</th>
+                                <th>Qualification</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   <td>-rw------</td>
+                                    <td>d.ward</td>
+                                    <td>2.0M</td>
+                                    <td>12/2022</td>
+                                    <td>Level 3 IT Support Technician.pdf</td> 
+                                </tr>
+                                <tr>
+                                    <td>-rw------</td>
+                                    <td>d.ward</td>
+                                    <td>1.3M</td>
+                                    <td>07/2020</td>
+                                    <td>Dark Web, Anonymity, Privacy & Security Course.jpg</td>
+                                </tr>
+                                <tr>
+                                    <td>-rw------</td>
+                                    <td>d.ward</td>
+                                    <td>1.1M</td>
+                                    <td>05/2020</td>
+                                    <td>Cyber Security Bootcamp.jpg</td>
+                                </tr>
+                                <tr>
+                                    <td>-rw------</td>
+                                    <td>d.ward</td>
+                                    <td>1.2M</td>
+                                    <td>05/2020</td>
+                                    <td>Python Bootcamp.jpg</td>
+                                </tr>
+                                <tr>
+                                    <td>-rw------</td>
+                                    <td>d.ward</td>
+                                    <td>2.8M</td>
+                                    <td>07/2013</td>
+                                    <td>Level 2 Electrical Installation.pdf</td>
+                                </tr>
+                                <tr>
+                                    <td>-rw------</td>
+                                    <td>d.ward</td>
+                                    <td>3.6M</td>
+                                    <td>06/2012</td>
+                                    <td>9 A-C GCSEs.pdf</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="row" id="termial-line-2"> <!--Terminal line 2-->
                         <h4 class="terminal-root-text">user@d.ward</h4>
@@ -111,7 +184,7 @@
                               </ul>
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons4" data-bs-toggle="dropdown"> Terminal</button>
                             <ul class="dropdown-menu" aria-labelledby="option-buttons4">
-                                <li><a class="dropdown-item" href="#">Features may be coming soon</a></li>
+                                <li><a class="dropdown-item" href="#" id="clear">Clear</a></li>
                               </ul>
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons5" data-bs-toggle="dropdown"> Help</button>
                             <ul class="dropdown-menu" aria-labelledby="option-buttons5">

@@ -3,6 +3,10 @@ body{
     font-family: "Courier";
     overflow: hidden;
 }
+a:hover{
+    /* background-color: white; */
+    color: white;
+}
 
 /* Class */
 
@@ -128,6 +132,7 @@ body{
 .output{
     padding: 0;
     color: white;
+    pointer-events: fill;
 }
 
 .offset{
@@ -249,6 +254,13 @@ body{
     visibility: hidden;
 }
 
+#ls-info{
+    position: absolute;
+    z-index: -3;
+    align-items: start;
+    visibility: hidden;
+}
+
 #row1{
     position: relative;
     z-index: 4;
@@ -268,11 +280,21 @@ body{
     width: 197vh;
 }
 
+#closebtn{
+    width: auto;
+}
+
 @media (max-width: 1000px) {
     .center-Container{
         margin-top: 25%;
         margin-bottom: 0%;
     }
+}
+
+#ls-table{
+    width: auto;
+    background-color: #383838;
+    --bs-table-bg: #383838;
 }
 
 @media (max-width: 1150px){
