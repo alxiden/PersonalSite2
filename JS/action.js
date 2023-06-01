@@ -4,7 +4,7 @@ document.getElementById('man').addEventListener('click', man)
 document.getElementById('find').addEventListener('click', find)
 document.getElementById('ls').addEventListener('click', ls)
 document.getElementById('cd').addEventListener('click', cd)
-document.getElementById('groups').addEventListener('click', groups)
+document.getElementById('cat').addEventListener('click', cat)
 
 //q button
 document.getElementById('q').addEventListener('click',clearPage)
@@ -16,9 +16,10 @@ document.getElementById('skill').addEventListener('click', man)
 document.getElementById('projects').addEventListener('click', find)
 document.getElementById('qua').addEventListener('click', ls)
 document.getElementById('place').addEventListener('click', cd)
-document.getElementById('links').addEventListener('click', groups)
+document.getElementById('links').addEventListener('click', cat)
 
 //option bar Terminal buttons
+document.getElementById('reboot').addEventListener('click', Reload)
 document.getElementById('clear').addEventListener('click', clearPage)
 
 //Modal monitering
@@ -36,6 +37,21 @@ document.addEventListener('keydown',function(e){
     }
     
 });
+
+//reload the website
+function Reload(){
+    if(currentpage === 'home') {
+        anima('reboot', '.cmd');
+        setTimeout(function(){location.reload()},1000)
+    }else {
+        var id = 'cmd-txt-2'
+        document.getElementById(id).style.position = 'inherit';
+        document.getElementById(id).style.zIndex = 0;
+        anima('reboot', '.cmd2');
+        setTimeout(function(){location.reload()},1000)
+    }
+    
+}
 
 //Model Text Change
 function ModelText(project){
@@ -118,14 +134,14 @@ function ls(){
 
 function cd(){}
 
-function groups(){
+function cat(){
     if (currentpage == 'home'){
-        fingerPage()
-        return currentpage = 'groups';
+        catPage()
+        return currentpage = 'cat';
     } else {
         clearPage()
         setTimeout(function(){
-            fingerPage()
+            catPage()
         },999)
     }; 
 }
@@ -158,7 +174,7 @@ function clearPage() {
         setTimeout(function(){
             document.getElementById('termial-line-2').style.zIndex = -2;
             var clearpage = currentpage + '-info';
-            console.log(clearpage)
+            //console.log(clearpage)
             document.getElementById(clearpage).style.zIndex = -2;
             document.getElementById(clearpage).style.position = 'absolute';
             document.getElementById('cmd-txt').innerHTML = '';
@@ -168,6 +184,7 @@ function clearPage() {
             document.getElementById('cursor1').style.zIndex = 0;
             document.getElementById('cmd-txt-2').innerHTML = '';
             document.getElementById('man-info').visibility = 'hidden';
+            return currentpage = "home"
         },1000);
 }
 
@@ -254,5 +271,25 @@ function lsPage(){
             document.getElementById('cursor1').style.position = 'absolute';
             document.getElementById('cursor1').style.zIndex = -2;
             return currentpage = 'ls'
+        },2500);
+}
+
+function catPage(){
+    var id = 'cmd-txt';
+    clear();
+        document.getElementById(id).style.position = 'inherit';
+        document.getElementById(id).style.zIndex = 0;
+        const input = "cat d.ward/Socials.txt";
+        anima(input, '.cmd');
+        setTimeout(function(){
+            document.getElementById('cat-info').style.position = 'inherit';
+            document.getElementById('cat-info').style.zIndex = 3;
+            document.getElementById('cat-info').style.visibility = 'inherit'
+            document.getElementById('man-info').visibility = 'hidden';
+            document.getElementById('termial-line-2').style.zIndex = 0;
+            document.getElementById('termial-line-2').style.visibility = 'inherit';
+            document.getElementById('cursor1').style.position = 'absolute';
+            document.getElementById('cursor1').style.zIndex = -2;
+            return currentpage = 'cat'
         },2500);
 }
