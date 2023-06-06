@@ -177,13 +177,14 @@ function clearPage() {
             //console.log(clearpage)
             document.getElementById(clearpage).style.zIndex = -2;
             document.getElementById(clearpage).style.position = 'absolute';
+            document.getElementById(clearpage).style.visibility = 'hiddden';
             document.getElementById('cmd-txt').innerHTML = '';
             document.getElementById('row1').style.visibility = 'inherit';
             document.getElementById('row2').style.visibility = 'inherit';
             document.getElementById('cursor1').style.position = 'inherit';
             document.getElementById('cursor1').style.zIndex = 0;
             document.getElementById('cmd-txt-2').innerHTML = '';
-            document.getElementById('man-info').visibility = 'hidden';
+            document.getElementById('man-info').style.visibility = 'hidden';
             return currentpage = "home"
         },1000);
 }
