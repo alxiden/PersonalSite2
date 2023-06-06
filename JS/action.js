@@ -22,6 +22,9 @@ document.getElementById('links').addEventListener('click', cat)
 document.getElementById('reboot').addEventListener('click', Reload)
 document.getElementById('clear').addEventListener('click', clearPage)
 
+//option bar help buttons
+document.getElementById('command').addEventListener('click', help)
+
 //Modal monitering
 document.getElementById('Intune').addEventListener('click',function(e){ModelText('Intune')})
 document.getElementById('TeamsBot').addEventListener('click',function(e){ModelText('TeamsBot')})
@@ -146,6 +149,18 @@ function cat(){
     }; 
 }
 
+function help(){
+    if (currentpage == 'home'){
+        helpPage()
+        return currentpage = 'help';
+    } else {
+        clearPage()
+        setTimeout(function(){
+            helpPage()
+        },999)
+    }; 
+}
+
 
 // Typing Animation
 function anima(input, location){
@@ -185,6 +200,7 @@ function clearPage() {
             document.getElementById('cursor1').style.zIndex = 0;
             document.getElementById('cmd-txt-2').innerHTML = '';
             document.getElementById('man-info').style.visibility = 'hidden';
+            document.getElementById('ls-table').style.visibility = 'hidden';
             return currentpage = "home"
         },1000);
 }
@@ -260,12 +276,13 @@ function lsPage(){
     clear();
         document.getElementById(id).style.position = 'inherit';
         document.getElementById(id).style.zIndex = 0;
-        const input = "ls -lh Qualifications";
+        const input = "ls -l Qualifications";
         anima("ls -lh Qualifications", '.cmd');
         setTimeout(function(){
             document.getElementById('ls-info').style.position = 'inherit';
             document.getElementById('ls-info').style.zIndex = 3;
             document.getElementById('ls-info').style.visibility = 'inherit'
+            document.getElementById('ls-table').style.visibility = 'inherit';
             document.getElementById('man-info').visibility = 'hidden';
             document.getElementById('termial-line-2').style.zIndex = 0;
             document.getElementById('termial-line-2').style.visibility = 'inherit';
@@ -292,5 +309,25 @@ function catPage(){
             document.getElementById('cursor1').style.position = 'absolute';
             document.getElementById('cursor1').style.zIndex = -2;
             return currentpage = 'cat'
+        },2500);
+}
+
+function helpPage(){
+    var id = 'cmd-txt';
+    clear();
+        document.getElementById(id).style.position = 'inherit';
+        document.getElementById(id).style.zIndex = 0;
+        const input = "homepage --help ";
+        anima(input, '.cmd');
+        setTimeout(function(){
+            document.getElementById('help-info').style.position = 'inherit';
+            document.getElementById('help-info').style.zIndex = 3;
+            document.getElementById('help-info').style.visibility = 'inherit'
+            document.getElementById('man-info').visibility = 'hidden';
+            document.getElementById('termial-line-2').style.zIndex = 0;
+            document.getElementById('termial-line-2').style.visibility = 'inherit';
+            document.getElementById('cursor1').style.position = 'absolute';
+            document.getElementById('cursor1').style.zIndex = -2;
+            return currentpage = 'help'
         },2500);
 }

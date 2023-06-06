@@ -29,7 +29,7 @@
   </div>
     <div class="card border-light" >
         <div id="topbar">
-            <h4>user@d.ward: /</h4>
+            <h4 id="topbartxt">user@d.ward: /</h4>
         </div>
         <!-- Terminal layout/design -->
         <div class="card-body" id="terminal"> 
@@ -90,50 +90,50 @@
                         <h5 class="output">Total 20.0M</h5>
                         <table class="table table-dark table-sm" id="ls-table" >
                             <thead>
-                                <th>Permissions</th>
+                                <th>Perms</th>
                                 <th>Owner</th>
                                 <th>size</th>
                                 <th>Date</th>
-                                <th>Qualification</th>
+                                <th id="header">Qualification</th>
                             </thead>
                             <tbody>
                                 <tr>
-                                   <td>-rw------</td>
+                                   <td>-rw---</td>
                                     <td>d.ward</td>
                                     <td>2.0M</td>
                                     <td>12/2022</td>
                                     <td>Level 3 IT Support Technician.pdf</td> 
                                 </tr>
                                 <tr>
-                                    <td>-rw------</td>
+                                    <td>-rw---</td>
                                     <td>d.ward</td>
                                     <td>1.3M</td>
                                     <td>07/2020</td>
                                     <td>Dark Web, Anonymity, Privacy & Security Course.jpg</td>
                                 </tr>
                                 <tr>
-                                    <td>-rw------</td>
+                                    <td>-rw---</td>
                                     <td>d.ward</td>
                                     <td>1.1M</td>
                                     <td>05/2020</td>
                                     <td>Cyber Security Bootcamp.jpg</td>
                                 </tr>
                                 <tr>
-                                    <td>-rw------</td>
+                                    <td>-rw---</td>
                                     <td>d.ward</td>
                                     <td>1.2M</td>
                                     <td>05/2020</td>
                                     <td>Python Bootcamp.jpg</td>
                                 </tr>
                                 <tr>
-                                    <td>-rw------</td>
+                                    <td>-rw---</td>
                                     <td>d.ward</td>
                                     <td>2.8M</td>
                                     <td>07/2013</td>
                                     <td>Level 2 Electrical Installation.pdf</td>
                                 </tr>
                                 <tr>
-                                    <td>-rw------</td>
+                                    <td>-rw---</td>
                                     <td>d.ward</td>
                                     <td>3.6M</td>
                                     <td>06/2012</td>
@@ -150,6 +150,38 @@
                         <h5 class="output"><a href="https://profile.indeed.com/p/danielw-lxob9j7" class="output" target="_blank"><b>Indeed CV: </b>https://profile.indeed.com/p/danielw-lxob9j7</a></h5>
                         <h5 class="output"><a href="https://github.com/alxiden" class="output" target="_blank"><b>GitHub:</b>https://github.com/alxiden</a></h5>
                     </div>
+                    <div class="row" id="help-info"><!--Command info-->
+                        <h5 class="output">See below for information on all linux commands that appear on the site:</h5>
+                        <table class="table table-dark table-sm" id="help-table" >
+                            <thead>
+                                <th>Command</th>
+                                <th>Arguments</th>
+                                <th id="header">Information</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   <td>finger</td>
+                                    <td>-l</td>
+                                    <td>finger displays core information of all users, -l adds the long format showing extra information and specifying a name will only return information related to that user.</td>
+                                </tr>
+                                <tr>
+                                    <td>man</td>
+                                    <td></td>
+                                    <td>man opens the manual for the program that is specified, this is a core command that helps you use new programs or refrence for arguments.</td>
+                                </tr>
+                                <tr>
+                                    <td>find</td>
+                                    <td>-name</td>
+                                    <td>The find command is used to search for files and directories, the cool part is that it accepts wild card arguments (*) to you can search by file types. The "." specifies the location to search through and the -name dictates the file/folder name being searched for. </td>
+                                </tr>
+                                <tr>
+                                    <td>ls</td>
+                                    <td>-l</td>
+                                    <td>ls is a command that will list the files and folders in a drectory, like with the finger command the -l argument provides more information on each file.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="row" id="termial-line-2"> <!--Terminal line 2-->
                         <h4 class="terminal-root-text">user@d.ward</h4>
                         <h4 class="punctuation">:</h4>
@@ -157,13 +189,10 @@
                         <h4 class="punctuation">$</h4>
                         <h4 class="cmd2" id="cmd-txt-2"></h4>
                         <div class="cursor" id="cursor2"></div>
-                    </div>
-                
-            </div>
-            
+                    </div>                
+           </div>
         </div>
     </div>
-
     <div>
         <div class="row"> <!-- Options Bar and welcome display -->
             <div class="col-lg" id="col-overide">
@@ -199,14 +228,12 @@
                               </ul>
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons5" data-bs-toggle="dropdown"> Help</button>
                             <ul class="dropdown-menu" aria-labelledby="option-buttons5">
-                                <li><a class="dropdown-item" href="#">Command Info</a></li>
+                                <li><a class="dropdown-item" href="#" id="command">Command Info</a></li>
                                 <li><a class="dropdown-item" href="#">More Info</a></li>
                               </ul>
                         </div>
                     </div>
-                
-                    </div>
-
+                </div>
             </div>
             <div class="col-lg">
                 <div class="center-Container" id="main display">
@@ -235,13 +262,12 @@
                 </div>
             </div>
             <div class="col-lg"></div>
-
         </div>
         <div class="row" id="row2"> <!-- 2nd Row of buttons  -->
             <div class="col-lg"></div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light" id="ls">ls -lh Qualifications</button>
+                    <button type="button" class="btn btn-outline-light" id="ls">ls -l Qualifications</button>
                 </div>
             </div>
             <div class="col-lg">
@@ -256,7 +282,6 @@
             </div>
             <div class="col-lg"></div>
         </div>
-        
     </div>
     
     <script src="JS/action.js" charset="utf-8"></script>

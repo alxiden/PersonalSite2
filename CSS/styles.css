@@ -133,6 +133,7 @@ a:hover{
     padding: 0;
     color: white;
     pointer-events: fill;
+    margin-top: 10px;
 }
 
 .offset{
@@ -167,6 +168,11 @@ a:hover{
     text-align: center;
     box-shadow: 20px;
     
+}
+
+#topbartxt{
+    position: relative;
+    z-index: 3;
 }
 
 #terminal{
@@ -268,6 +274,12 @@ a:hover{
     visibility: hidden;
 }
 
+#help-info{
+    position: absolute;
+    z-index: -3;
+    visibility: hidden;
+}
+
 #row1{
     position: relative;
     z-index: 4;
@@ -289,6 +301,24 @@ a:hover{
 
 #closebtn{
     width: auto;
+}
+
+#finger{
+    margin-top: 70px;
+}
+#man{
+    margin-top: 70px;
+}
+#find{
+    margin-top: 70px;
+}
+
+#help-table{
+    --bs-table-bg: 383838;
+}
+
+#header{
+    text-align: center;
 }
 
 @media (max-width: 1000px) {
