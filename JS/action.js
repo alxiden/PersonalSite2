@@ -3,7 +3,7 @@ document.getElementById('finger').addEventListener('click', finger)
 document.getElementById('man').addEventListener('click', man)
 document.getElementById('find').addEventListener('click', find)
 document.getElementById('ls').addEventListener('click', ls)
-document.getElementById('cd').addEventListener('click', cd)
+document.getElementById('rev').addEventListener('click', rev)
 document.getElementById('cat').addEventListener('click', cat)
 
 //q button
@@ -15,7 +15,7 @@ document.getElementById('about').addEventListener('click', finger)
 document.getElementById('skill').addEventListener('click', man)
 document.getElementById('projects').addEventListener('click', find)
 document.getElementById('qua').addEventListener('click', ls)
-document.getElementById('place').addEventListener('click', cd)
+document.getElementById('place').addEventListener('click', rev)
 document.getElementById('links').addEventListener('click', cat)
 
 //option bar Terminal buttons
@@ -135,7 +135,17 @@ function ls(){
     }; 
 }
 
-function cd(){}
+function rev(){
+    if (currentpage == 'home'){
+        revPage()
+        return currentpage = 'rev';
+    } else {
+        clearPage()
+        setTimeout(function(){
+            revPage()
+        },999)
+    };
+}
 
 function cat(){
     if (currentpage == 'home'){
@@ -201,6 +211,9 @@ function clearPage() {
             document.getElementById('cmd-txt-2').innerHTML = '';
             document.getElementById('man-info').style.visibility = 'hidden';
             document.getElementById('ls-table').style.visibility = 'hidden';
+            document.getElementById('ls-info').style.visibility = 'hidden';
+            document.getElementById('cat-info').style.visibility = 'hidden';
+            document.getElementById('reverse').style.visibility = 'hidden';
             return currentpage = "home"
         },1000);
 }
@@ -330,4 +343,36 @@ function helpPage(){
             document.getElementById('cursor1').style.zIndex = -2;
             return currentpage = 'help'
         },2500);
+}
+
+function revPage(){
+    var id = 'cmd-txt';
+    let promptxt = prompt("Please enter some text (32 max characters):")
+    var txtlen = promptxt.length
+    if(txtlen > 32){
+        alert("Your string was too long")
+    } else{
+        clear();
+        document.getElementById(id).style.position = 'inherit';
+        document.getElementById(id).style.zIndex = 0;
+        const input = "rev"+" " + promptxt;
+        anima(input, '.cmd');
+        var revtxt = promptxt.split("").reverse().join("");
+        document.getElementById('reverse').innerHTML = revtxt;        
+        setTimeout(function(){
+            document.getElementById('rev-info').style.position = 'inherit';
+            document.getElementById('rev-info').style.zIndex = 3;
+            document.getElementById('rev-info').style.visibility = 'inherit'
+            document.getElementById('reverse').style.visibility = 'inherit'
+            document.getElementById('man-info').visibility = 'hidden';
+            document.getElementById('termial-line-2').style.zIndex = 0;
+            document.getElementById('termial-line-2').style.visibility = 'inherit';
+            document.getElementById('cursor1').style.position = 'absolute';
+            document.getElementById('cursor1').style.zIndex = -2;
+            return currentpage = 'help'
+        },2500);
+    }
+
+    
+        
 }

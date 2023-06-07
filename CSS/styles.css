@@ -304,13 +304,13 @@ a:hover{
 }
 
 #finger{
-    margin-top: 70px;
+    margin-top: 150px;
 }
 #man{
-    margin-top: 70px;
+    margin-top: 150px;
 }
 #find{
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 #help-table{
@@ -319,6 +319,14 @@ a:hover{
 
 #header{
     text-align: center;
+}
+
+#rev-info{
+    color: white;
+    position: absolute;
+    z-index: -3;
+    align-items: start;
+    visibility: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -334,7 +342,7 @@ a:hover{
     --bs-table-bg: #383838;
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1550px){
     .btn{
         visibility: hidden;
         margin-left: 0px;
@@ -369,7 +377,7 @@ a:hover{
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
     .hidden{
         position: absolute;
         z-index: -4;

@@ -62,7 +62,8 @@
                             <h4 class="output">Synopsis:</h4>
                             <p class="output offset"> A overview of all the skills and knowledge I have gained.</p>
                             <h4 class="output">Description:</h4>
-                            <p class="output offset"><b>Python:</b> <a href="#" class="hidden"> Started during the Covid pandemic and is my go programing language when I need to automate something.</a>★★★★★</p>
+                            <p class="output offset"><b>Python:</b> <a href="#" class="hidden">Started during the Covid pandemic and is my go programing language when I need to automate something.</a>★★★★★</p>
+                            <p class="output offset"><b>Linux:</b> <a href="#" class="hidden">I have used a Linux mint distro as my primary OS for the last 5 years and have used Kali and Ubunto as VM's.</a>★★★★★</p>
                             <p class="output offset"><b>Office365:</b> <a href="#" class="hidden">From Word to to Intune theres not a part of office 365 I havent used. </a> ★★★★★</p>
                             <p class="output offset"><b>Telephony:</b> <a href="#" class="hidden">As the only one managing my current workplaces phonelines this is a skill I had to pick up quick.</a> ★★★★</p>
                             <p class="output offset"><b>Proclaim:</b> <a href="#" class="hidden">For better or worse I am well versed in Access's Proclaim software. Handling automation, users and the task server but not skilled with the reporting tools.</a> ★★★</h5>
@@ -73,9 +74,7 @@
                                 <button id="q">Manual page man(1) (press <a href="" class="hidden black-text">q</a>  to quit)</button>
                             </div>
                     </div>
-                        <!-- <div class="col-sm" id="empty"></div> -->
-                        
-                        
+                        <!-- <div class="col-sm" id="empty"></div> -->                        
                     </div>
                     <div class="row" id="find-info"> <!--Projects-->
                         <h5 class="output">Select a document below to see more information:</h5>
@@ -150,8 +149,11 @@
                         <h5 class="output"><a href="https://profile.indeed.com/p/danielw-lxob9j7" class="output" target="_blank"><b>Indeed CV: </b>https://profile.indeed.com/p/danielw-lxob9j7</a></h5>
                         <h5 class="output"><a href="https://github.com/alxiden" class="output" target="_blank"><b>GitHub:</b>https://github.com/alxiden</a></h5>
                     </div>
+                    <div class="row" id="rev-info"><!--rev string generator-->
+                        <h5 class="output" id="reverse">String goes here</h5>
+                    </div>
                     <div class="row" id="help-info"><!--Command info-->
-                        <h5 class="output">See below for information on all linux commands that appear on the site:</h5>
+                        <h5 class="output"><a href="" class="hidden">See below for information on all linux commands that appear on the site:</a></h5>
                         <table class="table table-dark table-sm" id="help-table" >
                             <thead>
                                 <th>Command</th>
@@ -162,23 +164,44 @@
                                 <tr>
                                    <td>finger</td>
                                     <td>-l</td>
-                                    <td>finger displays core information of all users, -l adds the long format showing extra information and specifying a name will only return information related to that user.</td>
+                                    <td>finger displays core information of all users. <a href="" class="hidden">-l adds the long format showing extra information and specifying a name will only return information related to that user.</a></td>
                                 </tr>
                                 <tr>
                                     <td>man</td>
                                     <td></td>
-                                    <td>man opens the manual for the program that is specified, this is a core command that helps you use new programs or refrence for arguments.</td>
+                                    <td>man opens the manual for the program that is specified. <a href="" class="hidden">This is a core command that helps you use new programs or refrence for arguments.</a></td>
                                 </tr>
                                 <tr>
                                     <td>find</td>
                                     <td>-name</td>
-                                    <td>The find command is used to search for files and directories, the cool part is that it accepts wild card arguments (*) to you can search by file types. The "." specifies the location to search through and the -name dictates the file/folder name being searched for. </td>
+                                    <td>The find command is used to search for files and directories. <a href="" class="hidden">The cool part is that it accepts wild card arguments (*) to you can search by file types. The "." specifies the location to search through and the -name dictates the file/folder name being searched for.</a></td>
                                 </tr>
                                 <tr>
                                     <td>ls</td>
                                     <td>-l</td>
-                                    <td>ls is a command that will list the files and folders in a drectory, like with the finger command the -l argument provides more information on each file.</td>
+                                    <td>ls is a command that will list the files and folders in a drectory. <a href="" class="hidden">Like with the finger command the -l argument provides more information on each file.</a> </td>
                                 </tr>
+                                <tr>
+                                    <td>rev</td>
+                                    <td></td>
+                                    <td>rev reverses any string entered. <a href=""class="hidden">This is just here for fun, no other reason than that.</a></td>
+                                </tr>
+                                <tr>
+                                    <td>cat</td>
+                                    <td></td>
+                                    <td>the cat command can be used to create and in this case read files. <a href="" class="hidden">Cat also has functionalities built in to copy, append and edit text files with great ease.</a> </td>
+                                </tr>
+                                <tr>
+                                    <td>clear</td>
+                                    <td></td>
+                                    <td>This command clears all text in the terminal.</td>
+                                </tr>
+                                <tr>
+                                    <td>reboot</td>
+                                    <td></td>
+                                    <td>reboot does what it says in that it will restart/reboot a linux PC</td>
+                                </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -206,7 +229,7 @@
                                 <li><a class="dropdown-item" href="#" id="skill">Skills</a></li>
                                 <li><a class="dropdown-item" href="#" id="projects">Projects</a></li>
                                 <li><a class="dropdown-item" href="#" id="qua">Qualifications</a></li>
-                                <li><a class="dropdown-item" href="#" id="place">Placeholder</a></li>
+                                <li><a class="dropdown-item" href="#" id="place">Reverse</a></li>
                                 <li><a class="dropdown-item" href="#" id="links">Links and Socials</a></li>
                               </ul>
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons2" data-bs-toggle="dropdown"> Edit</button>
@@ -229,7 +252,7 @@
                             <button class="option-menu btn-sm dropdown-toggle" id="option-buttons5" data-bs-toggle="dropdown"> Help</button>
                             <ul class="dropdown-menu" aria-labelledby="option-buttons5">
                                 <li><a class="dropdown-item" href="#" id="command">Command Info</a></li>
-                                <li><a class="dropdown-item" href="#">More Info</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">More Info</a></li> -->
                               </ul>
                         </div>
                     </div>
@@ -272,7 +295,7 @@
             </div>
             <div class="col-lg">
                 <div class="button-con">
-                    <button type="button" class="btn btn-outline-light" id="cd">cd d.ward/WIP</button>
+                    <button type="button" class="btn btn-outline-light" id="rev">rev .....</button>
                 </div>
             </div>
             <div class="col-lg">
