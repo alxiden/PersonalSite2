@@ -214,6 +214,7 @@ function clearPage() {
             document.getElementById('ls-info').style.visibility = 'hidden';
             document.getElementById('cat-info').style.visibility = 'hidden';
             document.getElementById('reverse').style.visibility = 'hidden';
+            document.getElementById('help-table').style.visibility = 'hidden';
             return currentpage = "home"
         },1000);
 }

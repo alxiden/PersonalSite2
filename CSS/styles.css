@@ -329,6 +329,10 @@ a:hover{
     visibility: hidden;
 }
 
+#closebtn{
+    visibility: inherit;
+}
+
 @media (max-width: 1000px) {
     .center-Container{
         margin-top: 25%;

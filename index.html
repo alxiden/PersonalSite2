@@ -12,21 +12,21 @@
 </head>
 <body>
     <!-- Modal -->
-    <div class="modal fade" id="findModal" tabindex="-1" aria-labelledby="findLabel" aria-hidden="true">
+    <div class="modal fade" id="findModal" tabindex="-1" aria-labelledby="findLabel" aria-hidden="true"> <!--Project Model-->
         <div class="modal-dialog modal-dialog-centered" >
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="findModalLabel">Placeholder</h5>
+                    <h5 class="modal-title" id="findModalLabel">Placeholder</h5>
                 </div>
-        <div class="modal-body" id="findBody">
-          Placeholder 
+                <div class="modal-body" id="findBody"><!--Project text-->
+                    Placeholder 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="closebtn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" id="closebtn" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
     <div class="card border-light" >
         <div id="topbar">
             <h4 id="topbartxt">user@d.ward: /</h4>
@@ -42,177 +42,175 @@
                     <h4 class="cmd" id="cmd-txt"></h4>
                     <div class="cursor" id="cursor1"></div>
                 </div>
-                    <div class="row" id="finger-info"><!--About me information-->
-                        <div class="col-lg output-txt">
-                            <p class="output"> <b>Name:</b> Daniel Ward</p>
-                            <p class="output"> <b>Date of Birth:</b> 28/06/96</p>
-                        </div>
-                        <div class="col-lg output-txt">
-                            <p class="output"> <b>Signature Dish:</b> Ultimate Smash Burger</p>
-                            <p class="output"> <b>Hobbies:</b> Camping, Cooking, Reading, Gaming and Gardening</p>
-                        </div>
-                        
-                        <p class="output"> <b>Summary:</b>If it's broken I will fix it, if it's working I will break it!</p>
-                        <p class="output">A trained chef who left the kitchens behind to ask people if they have tried turning it off and on again. A support player in every game and in every day I always enjoy helping people while always forging my own path forwards. My next step is entering the complex world of cyber security to better protect myself and others. If you ever need a helping hand you know who to ask!</p>
+                <div class="row" id="finger-info"><!--About me information-->
+                    <div class="col-lg output-txt">
+                        <p class="output"> <b>Name:</b> Daniel Ward</p>
+                        <p class="output"> <b>Date of Birth:</b> 28/06/96</p>
                     </div>
-                    <div class="row" id="man-info"> <!-- Skills -->
-                        <div class="col-lg output-txt">
-                            <h4 class="output">Name:</h4> 
-                            <p class="output offset">Skills and knowledge</p>
-                            <h4 class="output">Synopsis:</h4>
-                            <p class="output offset"> A overview of all the skills and knowledge I have gained.</p>
-                            <h4 class="output">Description:</h4>
-                            <p class="output offset"><b>Python:</b> <a href="#" class="hidden">Started during the Covid pandemic and is my go programing language when I need to automate something.</a>★★★★★</p>
-                            <p class="output offset"><b>Linux:</b> <a href="#" class="hidden">I have used a Linux mint distro as my primary OS for the last 5 years and have used Kali and Ubunto as VM's.</a>★★★★★</p>
-                            <p class="output offset"><b>Office365:</b> <a href="#" class="hidden">From Word to to Intune theres not a part of office 365 I havent used. </a> ★★★★★</p>
-                            <p class="output offset"><b>Telephony:</b> <a href="#" class="hidden">As the only one managing my current workplaces phonelines this is a skill I had to pick up quick.</a> ★★★★</p>
-                            <p class="output offset"><b>Proclaim:</b> <a href="#" class="hidden">For better or worse I am well versed in Access's Proclaim software. Handling automation, users and the task server but not skilled with the reporting tools.</a> ★★★</h5>
-                            <p class="output offset"><b>Microsoft Azure:</b> <a href="#" class="hidden">Mostly used the Active directory side but dabbled in a few other features </a>★★★</p>
-                            <p class="output offset"><b>HTML/CSS/JS:</b> <a href="#" class="hidden">Built 2 websites for myself, one much better than the other. Not much of a designer but is fun to play with. </a>★★★</p>
-                            <p class="output offset"><b>CyberSecurity:</b> <a href="#" class="hidden">Only just starting with the basics but studing with the "TryHackMe" site and looking to do a degree in the subject starting 2024.</a> ★★</p>
-                            <div class="row" id="man-bar">
-                                <button id="q">Manual page man(1) (press <a href="" class="hidden black-text">q</a>  to quit)</button>
-                            </div>
+                    <div class="col-lg output-txt">
+                        <p class="output"> <b>Signature Dish:</b> Ultimate Smash Burger</p>
+                        <p class="output"> <b>Hobbies:</b> Camping, Cooking, Reading, Gaming and Gardening</p>
+                    </div>  
+                    <p class="output"> <b>Summary:</b>If it's broken I will fix it, if it's working I will break it!</p>
+                    <p class="output">A trained chef who left the kitchens behind to ask people if they have tried turning it off and on again. A support player in every game and in every day I always enjoy helping people while always forging my own path forwards. My next step is entering the complex world of cyber security to better protect myself and others. If you ever need a helping hand you know who to ask!</p>
+                </div>
+                <div class="row" id="man-info"> <!-- Skills -->
+                    <div class="col-lg output-txt">
+                        <h4 class="output">Name:</h4> 
+                        <p class="output offset">Skills and knowledge</p>
+                        <h4 class="output">Synopsis:</h4>
+                        <p class="output offset"> A overview of all the skills and knowledge I have gained.</p>
+                        <h4 class="output">Description:</h4>
+                        <p class="output offset"><b>Python:</b> <a href="#" class="hidden">Started during the Covid pandemic and is my go programing language when I need to automate something.</a>★★★★★</p>
+                        <p class="output offset"><b>Linux:</b> <a href="#" class="hidden">I have used a Linux mint distro as my primary OS for the last 5 years and have used Kali and Ubunto as VM's.</a>★★★★★</p>
+                        <p class="output offset"><b>Office365:</b> <a href="#" class="hidden">From Word to to Intune theres not a part of office 365 I havent used. </a> ★★★★★</p>
+                        <p class="output offset"><b>Telephony:</b> <a href="#" class="hidden">As the only one managing my current workplaces phonelines this is a skill I had to pick up quick.</a> ★★★★</p>
+                        <p class="output offset"><b>Proclaim:</b> <a href="#" class="hidden">For better or worse I am well versed in Access's Proclaim software. Handling automation, users and the task server but not skilled with the reporting tools.</a> ★★★</h5>
+                        <p class="output offset"><b>Microsoft Azure:</b> <a href="#" class="hidden">Mostly used the Active directory side but dabbled in a few other features </a>★★★</p>
+                        <p class="output offset"><b>HTML/CSS/JS:</b> <a href="#" class="hidden">Built 2 websites for myself, one much better than the other. Not much of a designer but is fun to play with. </a>★★★</p>
+                        <p class="output offset"><b>CyberSecurity:</b> <a href="#" class="hidden">Only just starting with the basics but studing with the "TryHackMe" site and looking to do a degree in the subject starting 2024.</a> ★★</p>
+                        <div class="row" id="man-bar">
+                            <button id="q">Manual page man(1) (press <a href="" class="hidden black-text">q</a>  to quit)</button>
+                        </div>
                     </div>
                         <!-- <div class="col-sm" id="empty"></div> -->                        
-                    </div>
-                    <div class="row" id="find-info"> <!--Projects-->
-                        <h5 class="output">Select a document below to see more information:</h5>
-                        <h5 class="output"><a class="output" id="Intune" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Microsoft Intune.txt</a></h5>
-                        <h5 class="output"><a class="output" id="TeamsBot" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Microsoft Teams Bot.txt</a></h5>
-                        <h5 class="output"><a class="output" id="NewStarter" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/New Starter Process Automation.txt</a></h5>
-                        <h5 class="output"><a class="output" id="Sharepoint" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Sharepoint Knowledgebase Creation.txt</a></h5>
-                        <h5 class="output"><a class="output" id="Helpdesk" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Internal Helpdesk Ticket System.txt</a></h5>
-                        <h5 class="output"><a class="output" id="Switch" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Network Switch Replacement.txt</a></h5>
-                    </div>
-                    <div class="row" id="ls-info"><!--Qualifications-->
-                        <h5 class="output">Total 20.0M</h5>
-                        <table class="table table-dark table-sm" id="ls-table" >
-                            <thead>
-                                <th>Perms</th>
-                                <th>Owner</th>
-                                <th>size</th>
-                                <th>Date</th>
-                                <th id="header">Qualification</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                   <td>-rw---</td>
-                                    <td>d.ward</td>
-                                    <td>2.0M</td>
-                                    <td>12/2022</td>
-                                    <td>Level 3 IT Support Technician.pdf</td> 
-                                </tr>
-                                <tr>
-                                    <td>-rw---</td>
-                                    <td>d.ward</td>
-                                    <td>1.3M</td>
-                                    <td>07/2020</td>
-                                    <td>Dark Web, Anonymity, Privacy & Security Course.jpg</td>
-                                </tr>
-                                <tr>
-                                    <td>-rw---</td>
-                                    <td>d.ward</td>
-                                    <td>1.1M</td>
-                                    <td>05/2020</td>
-                                    <td>Cyber Security Bootcamp.jpg</td>
-                                </tr>
-                                <tr>
-                                    <td>-rw---</td>
-                                    <td>d.ward</td>
-                                    <td>1.2M</td>
-                                    <td>05/2020</td>
-                                    <td>Python Bootcamp.jpg</td>
-                                </tr>
-                                <tr>
-                                    <td>-rw---</td>
-                                    <td>d.ward</td>
-                                    <td>2.8M</td>
-                                    <td>07/2013</td>
-                                    <td>Level 2 Electrical Installation.pdf</td>
-                                </tr>
-                                <tr>
-                                    <td>-rw---</td>
-                                    <td>d.ward</td>
-                                    <td>3.6M</td>
-                                    <td>06/2012</td>
-                                    <td>9 A-C GCSEs.pdf</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="row" id="cat-info"><!--Links and socials-->
-                        <h5 class="output">If you want to get a hold of me everything you need is below:</h5>
-                        <h5 class="output"><a href="mailto:d.ward@alxiden.co.uk" class="output" target="_blank"><b>Email:</b>d.ward@alxiden.co.uk</a></h5>
-                        <h5 class="output"><a href="https://www.linkedin.com/in/alxiden/" class="output" target="_blank"><b>LinkedIn:</b>https://www.linkedin.com/in/alxiden/</a></h5>
-                        <h5 class="output"><a href="https://mastodon.social/@alxiden" class="output" target="_blank"><b>Mastodon:</b>https://mastodon.social/@alxiden</a></h5>
-                        <h5 class="output"><a href="https://profile.indeed.com/p/danielw-lxob9j7" class="output" target="_blank"><b>Indeed CV: </b>https://profile.indeed.com/p/danielw-lxob9j7</a></h5>
-                        <h5 class="output"><a href="https://github.com/alxiden" class="output" target="_blank"><b>GitHub:</b>https://github.com/alxiden</a></h5>
-                    </div>
-                    <div class="row" id="rev-info"><!--rev string generator-->
-                        <h5 class="output" id="reverse">String goes here</h5>
-                    </div>
-                    <div class="row" id="help-info"><!--Command info-->
-                        <h5 class="output"><a href="" class="hidden">See below for information on all linux commands that appear on the site:</a></h5>
-                        <table class="table table-dark table-sm" id="help-table" >
-                            <thead>
-                                <th>Command</th>
-                                <th>Arguments</th>
-                                <th id="header">Information</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                   <td>finger</td>
-                                    <td>-l</td>
-                                    <td>finger displays core information of all users. <a href="" class="hidden">-l adds the long format showing extra information and specifying a name will only return information related to that user.</a></td>
-                                </tr>
-                                <tr>
-                                    <td>man</td>
-                                    <td></td>
-                                    <td>man opens the manual for the program that is specified. <a href="" class="hidden">This is a core command that helps you use new programs or refrence for arguments.</a></td>
-                                </tr>
-                                <tr>
-                                    <td>find</td>
-                                    <td>-name</td>
-                                    <td>The find command is used to search for files and directories. <a href="" class="hidden">The cool part is that it accepts wild card arguments (*) to you can search by file types. The "." specifies the location to search through and the -name dictates the file/folder name being searched for.</a></td>
-                                </tr>
-                                <tr>
-                                    <td>ls</td>
-                                    <td>-l</td>
-                                    <td>ls is a command that will list the files and folders in a drectory. <a href="" class="hidden">Like with the finger command the -l argument provides more information on each file.</a> </td>
-                                </tr>
-                                <tr>
-                                    <td>rev</td>
-                                    <td></td>
-                                    <td>rev reverses any string entered. <a href=""class="hidden">This is just here for fun, no other reason than that.</a></td>
-                                </tr>
-                                <tr>
-                                    <td>cat</td>
-                                    <td></td>
-                                    <td>the cat command can be used to create and in this case read files. <a href="" class="hidden">Cat also has functionalities built in to copy, append and edit text files with great ease.</a> </td>
-                                </tr>
-                                <tr>
-                                    <td>clear</td>
-                                    <td></td>
-                                    <td>This command clears all text in the terminal.</td>
-                                </tr>
-                                <tr>
-                                    <td>reboot</td>
-                                    <td></td>
-                                    <td>reboot does what it says in that it will restart/reboot a linux PC</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="row" id="termial-line-2"> <!--Terminal line 2-->
-                        <h4 class="terminal-root-text">user@d.ward</h4>
-                        <h4 class="punctuation">:</h4>
-                        <h4 class="drectory-text">/Homepage</h4>
-                        <h4 class="punctuation">$</h4>
-                        <h4 class="cmd2" id="cmd-txt-2"></h4>
-                        <div class="cursor" id="cursor2"></div>
-                    </div>                
+                </div>
+                <div class="row" id="find-info"> <!--Projects-->
+                    <h5 class="output">Select a document below to see more information:</h5>
+                    <h5 class="output"><a class="output" id="Intune" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Microsoft Intune.txt</a></h5>
+                    <h5 class="output"><a class="output" id="TeamsBot" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Microsoft Teams Bot.txt</a></h5>
+                    <h5 class="output"><a class="output" id="NewStarter" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/New Starter Process Automation.txt</a></h5>
+                    <h5 class="output"><a class="output" id="Sharepoint" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Sharepoint Knowledgebase Creation.txt</a></h5>
+                    <h5 class="output"><a class="output" id="Helpdesk" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Internal Helpdesk Ticket System.txt</a></h5>
+                    <h5 class="output"><a class="output" id="Switch" href="#" data-bs-toggle="modal" data-bs-target="#findModal">Projects/Network Switch Replacement.txt</a></h5>
+                </div>
+                <div class="row" id="ls-info"><!--Qualifications-->
+                    <h5 class="output">Total 20.0M</h5>
+                    <table class="table table-dark table-sm" id="ls-table" >
+                        <thead>
+                            <th>Perms</th>
+                            <th>Owner</th>
+                            <th>size</th>
+                            <th>Date</th>
+                            <th id="header">Qualification</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-rw---</td>
+                                <td>d.ward</td>
+                                <td>2.0M</td>
+                                <td>12/2022</td>
+                                <td>Level 3 IT Support Technician.pdf</td> 
+                            </tr>
+                            <tr>
+                                <td>-rw---</td>
+                                <td>d.ward</td>
+                                <td>1.3M</td>
+                                <td>07/2020</td>
+                                <td>Dark Web, Anonymity, Privacy & Security Course.jpg</td>
+                            </tr>
+                            <tr>
+                                <td>-rw---</td>
+                                <td>d.ward</td>
+                                <td>1.1M</td>
+                                <td>05/2020</td>
+                                <td>Cyber Security Bootcamp.jpg</td>
+                            </tr>
+                            <tr>
+                                <td>-rw---</td>
+                                <td>d.ward</td>
+                                <td>1.2M</td>
+                                <td>05/2020</td>
+                                <td>Python Bootcamp.jpg</td>
+                            </tr>
+                            <tr>
+                                <td>-rw---</td>
+                                <td>d.ward</td>
+                                <td>2.8M</td>
+                                <td>07/2013</td>
+                                <td>Level 2 Electrical Installation.pdf</td>
+                            </tr>
+                            <tr>
+                                <td>-rw---</td>
+                                <td>d.ward</td>
+                                <td>3.6M</td>
+                                <td>06/2012</td>
+                                <td>9 A-C GCSEs.pdf</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row" id="cat-info"><!--Links and socials-->
+                    <h5 class="output">If you want to get a hold of me everything you need is below:</h5>
+                    <h5 class="output"><a href="mailto:d.ward@alxiden.co.uk" class="output" target="_blank"><b>Email:</b>d.ward@alxiden.co.uk</a></h5>
+                    <h5 class="output"><a href="https://www.linkedin.com/in/alxiden/" class="output" target="_blank"><b>LinkedIn:</b>https://www.linkedin.com/in/alxiden/</a></h5>
+                    <h5 class="output"><a href="https://mastodon.social/@alxiden" class="output" target="_blank"><b>Mastodon:</b>https://mastodon.social/@alxiden</a></h5>
+                    <h5 class="output"><a href="https://profile.indeed.com/p/danielw-lxob9j7" class="output" target="_blank"><b>Indeed CV: </b>https://profile.indeed.com/p/danielw-lxob9j7</a></h5>
+                    <h5 class="output"><a href="https://github.com/alxiden" class="output" target="_blank"><b>GitHub:</b>https://github.com/alxiden</a></h5>
+                </div>
+                <div class="row" id="rev-info"><!--rev string generator-->
+                    <h5 class="output" id="reverse">String goes here</h5>
+                </div>
+                <div class="row" id="help-info"><!--Command info-->
+                    <h5 class="output"><a href="" class="hidden">See below for information on all linux commands that appear on the site:</a></h5>
+                    <table class="table table-dark table-sm" id="help-table" >
+                        <thead>
+                            <th>Command</th>
+                            <th>Arguments</th>
+                            <th id="header">Information</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>finger</td>
+                                <td>-l</td>
+                                <td>finger displays core information of all users. <a href="" class="hidden">-l adds the long format showing extra information and specifying a name will only return information related to that user.</a></td>
+                            </tr>
+                            <tr>
+                                <td>man</td>
+                                <td></td>
+                                <td>man opens the manual for the program that is specified. <a href="" class="hidden">This is a core command that helps you use new programs or refrence for arguments.</a></td>
+                            </tr>
+                            <tr>
+                                <td>find</td>
+                                <td>-name</td>
+                                <td>The find command is used to search for files and directories. <a href="" class="hidden">The cool part is that it accepts wild card arguments (*) to you can search by file types. The "." specifies the location to search through and the -name dictates the file/folder name being searched for.</a></td>
+                            </tr>
+                            <tr>
+                                <td>ls</td>
+                                <td>-l</td>
+                                <td>ls is a command that will list the files and folders in a drectory. <a href="" class="hidden">Like with the finger command the -l argument provides more information on each file.</a> </td>
+                            </tr>
+                            <tr>
+                                <td>rev</td>
+                                <td></td>
+                                <td>rev reverses any string entered. <a href=""class="hidden">This is just here for fun, no other reason than that.</a></td>
+                            </tr>
+                            <tr>
+                                <td>cat</td>
+                                <td></td>
+                                <td>the cat command can be used to create and in this case read files. <a href="" class="hidden">Cat also has functionalities built in to copy, append and edit text files with great ease.</a> </td>
+                            </tr>
+                            <tr>
+                                <td>clear</td>
+                                <td></td>
+                                <td>This command clears all text in the terminal.</td>
+                            </tr>
+                            <tr>
+                                <td>reboot</td>
+                                <td></td>
+                                <td>reboot does what it says in that it will restart/reboot a linux PC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row" id="termial-line-2"> <!--Terminal line 2-->
+                    <h4 class="terminal-root-text">user@d.ward</h4>
+                    <h4 class="punctuation">:</h4>
+                    <h4 class="drectory-text">/Homepage</h4>
+                    <h4 class="punctuation">$</h4>
+                    <h4 class="cmd2" id="cmd-txt-2"></h4>
+                    <div class="cursor" id="cursor2"></div>
+                </div>                
            </div>
         </div>
     </div>
